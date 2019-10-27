@@ -10,7 +10,7 @@ namespace AppUtecoTrans
         {
             InitializeComponent();
 
-            MainPage = new PgLogin();
+            MainPage = new MasterDetailPage1();
         }
 
         protected override void OnStart()

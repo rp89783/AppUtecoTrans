@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppUtecoTrans.MasterDetailPage1Master"
+             Title="Master">
+  <StackLayout>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="0" BackgroundColor="LightSeaGreen" >
+                    <StackLayout>
+                        <Image Source="registrarse.png" HeightRequest="90" HorizontalOptions="Start"/>
+                        <Label Text="Nombre usuario"  FontSize="20" Grid.Row="1" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+                 <ListView Grid.Row="2">
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Perfil</x:String>
+                            <x:String>Rutas</x:String>
+                            <x:String>Publicidad</x:String>
+                            <x:String>Configurar</x:String>
+                            <x:String>Ayuda</x:String>
+                            <x:String>Desconectarse</x:String>
+                           
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </Grid>
+        </StackLayout>
+  </StackLayout>
+</ContentPage>

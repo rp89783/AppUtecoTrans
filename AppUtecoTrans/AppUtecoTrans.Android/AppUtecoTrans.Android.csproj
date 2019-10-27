@@ -85,7 +85,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LoginLocalizacion.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppUtecoTrans\AppUtecoTrans.csproj">
       <Project>{9537CDED-EDC1-4882-A435-5B40C73BA5E9}</Project>

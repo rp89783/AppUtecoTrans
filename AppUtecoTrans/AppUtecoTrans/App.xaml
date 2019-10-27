@@ -6,8 +6,19 @@
              mc:Ignorable="d"
              x:Class="AppUtecoTrans.App">
     <Application.Resources>
+
+        <ResourceDictionary>
+
+            <ControlTemplate x:Key="Encabezado">
+                <StackLayout>
+                    <Image Source="LoginLocalizacion.png"  HeightRequest="100" />
+                    <ContentPresenter/>
+                </StackLayout>
+                
+            </ControlTemplate>
+        </ResourceDictionary>
+
         
-           
         
     </Application.Resources>
 </Application>
