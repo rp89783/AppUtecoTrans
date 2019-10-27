@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppUtecoTrans.PgLogin"
+              Title="Login"
+             BackgroundImageSource="FondoLogin.png">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout HorizontalOptions="FillAndExpand" Padding="40,30,40,10" >
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+
+
+                </Grid>
+                <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize="18" Margin="0,10,0,0" />
+                <Image Source="LocalizacionLOGO.png"  HeightRequest="150" />
+
+                <Label Text="" TextColor="White" FontSize="18" Margin="0,10,0,0" x:Name="lblNombre"/>
+                <Entry Placeholder="Nombre de usuario" FontSize="18" PlaceholderColor="White"  TextColor="White" x:Name="txtNombreUsuario" />
+
+                <Label Text=""  TextColor="White" FontSize="18" x:Name="lblPass"/>
+                <Entry Placeholder="Contraseña" FontSize="18" PlaceholderColor="White" TextColor="White" IsPassword="True" x:Name="txtPass" />
+
+
+
+
+                <Button Text="ACCEDER" FontSize="18" HeightRequest="50" TextColor="#0088C1" BackgroundColor="White" CornerRadius="10" Margin="0,10,0,0" x:Name="btnAcceder" Clicked="btnAcceder_Clicked"/>
+                <Button  FontSize="18" HeightRequest="50" TextColor="White" BorderColor="White" BorderWidth="2" BackgroundColor="#00000000" CornerRadius="10" Text="REGISTRAR" x:Name="btnRegistar" Clicked="btnRegistar_Clicked"/>
+                <Button Text="Olvidades tu contraseña?" HorizontalOptions="Center" TextColor="White" FontSize="16" Margin="0,10,0,0"  BackgroundColor="#00000000"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
